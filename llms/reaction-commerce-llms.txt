@@ -1,0 +1,35 @@
+# Reaction Commerce (Mailchimp Open Commerce)
+
+> Reaction Commerce is an open-source, API-first, headless commerce platform
+> built with Node.js, React and GraphQL, deployed via Docker and Kubernetes.
+> Acquired by Mailchimp in 2020 and rebranded Mailchimp Open Commerce, the core
+> platform is now discontinued but its developer documentation and npm packages
+> remain published. The API is GraphQL and self-hosted; a default local instance
+> exposes its endpoint at http://localhost:3000/graphql.
+
+## API
+
+- [Open Commerce GraphQL API reference](https://mailchimp.com/developer/open-commerce/api/graphql/): GraphQL API reference for the Open Commerce platform.
+- [GraphQL Playground](https://mailchimp.com/developer/open-commerce/playground/): Interactive GraphQL playground / sandbox.
+
+## Docs
+
+- [Documentation — Fundamentals](https://mailchimp.com/developer/open-commerce/docs/fundamentals/): Core platform documentation.
+- [Guides](https://mailchimp.com/developer/open-commerce/guides/): How-to guides.
+- [Quick Start](https://mailchimp.com/developer/open-commerce/guides/quick-start/): Get a local API server, storefront and admin running.
+
+## Tools
+
+- [reaction-cli](https://www.npmjs.com/package/reaction-cli): CLI for creating, developing and deploying Open Commerce projects (`npm install -g reaction-cli`).
+- [@reactioncommerce/api-core](https://www.npmjs.com/package/@reactioncommerce/api-core): ReactionAPICore class for building an Open Commerce GraphQL API server.
+- [@reactioncommerce/components](https://www.npmjs.com/package/@reactioncommerce/components): Storefront React component library.
+
+## Source
+
+- [GitHub organization](https://github.com/reactioncommerce): All Open Commerce repositories.
+- [reaction (core platform, discontinued)](https://github.com/reactioncommerce/reaction): The core API-first GraphQL commerce platform.
+- [example-storefront](https://github.com/reactioncommerce/example-storefront): Next.js + Apollo Client headless storefront.
+
+## Security
+
+- [Responsible Disclosure](https://mailchimp.com/about/security/#Responsible_Disclosure): Mailchimp responsible disclosure contact for Open Commerce.

@@ -1,0 +1,21 @@
+generated: '2026-07-20'
+method: searched
+host: https://mailchimp.com
+notes: >-
+  The original reactioncommerce.com domain no longer resolves (project acquired
+  by Mailchimp; now Mailchimp Open Commerce). The Open Commerce developer docs
+  are served under mailchimp.com/developer/open-commerce, so the effective
+  well-known surface is that of the mailchimp.com parent host. Only the RFC 9116
+  security.txt was found; it points at Mailchimp's Responsible Disclosure page.
+documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: reaction-commerce-security.txt
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404

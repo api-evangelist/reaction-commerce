@@ -1,8 +1,27 @@
 aid: reaction-commerce
-name: Reaction Commerce *
-description: 'Reaction Commerce * is a company surfaced as a portfolio company of gv and added to the
-  API Evangelist network as a stub for enrichment. Sector: enterprise. This profile is a lead awaiting
-  the enrichment pipeline.'
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/reaction-commerce.png
+name: Reaction Commerce
+description: >-
+  Reaction Commerce is an open-source, API-first, headless commerce platform
+  built with Node.js, React and GraphQL and deployed via Docker and Kubernetes.
+  Acquired by Mailchimp in 2020, it was rebranded as Mailchimp Open Commerce and
+  offered a modular, plugin-based GraphQL API stack aimed at technical,
+  growth-minded retailers. The core `reaction` platform is now discontinued, but
+  its developer documentation, GraphQL API reference, CLI and npm packages remain
+  published under the @reactioncommerce scope. The API is GraphQL and self-hosted;
+  a default local instance exposes its endpoint at http://localhost:3000/graphql,
+  and an interactive GraphQL Playground is provided in the developer docs.
 url: https://raw.githubusercontent.com/api-evangelist/reaction-commerce/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,11 +31,35 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Enterprise
-apis: []
+- Commerce
+- eCommerce
+- Headless Commerce
+- Open Source
+- GraphQL
+- Storefront
+- Retail
+apis:
+- name: Open Commerce GraphQL API
+  description: >-
+    The Mailchimp Open Commerce (Reaction Commerce) GraphQL API — a modular,
+    plugin-based headless commerce API covering carts, orders, catalogs, shops,
+    accounts, surcharges and more. Self-hosted; a local instance serves GraphQL
+    at http://localhost:3000/graphql.
+  humanURL: https://mailchimp.com/developer/open-commerce/api/graphql/
+  baseURL: https://mailchimp.com/developer/open-commerce/playground/
+  tags:
+  - Commerce
+  - GraphQL
+  - Headless Commerce
+  properties:
+  - type: APIReference
+    url: https://mailchimp.com/developer/open-commerce/api/graphql/
+  - type: Sandbox
+    url: https://mailchimp.com/developer/open-commerce/playground/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -24,4 +67,41 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://reactioncommerce.com
+  url: https://mailchimp.com/developer/open-commerce/
+- type: Documentation
+  url: https://mailchimp.com/developer/open-commerce/docs/fundamentals/
+- type: APIReference
+  url: https://mailchimp.com/developer/open-commerce/api/graphql/
+- type: GettingStarted
+  url: https://mailchimp.com/developer/open-commerce/guides/quick-start/
+- type: Sandbox
+  url: https://mailchimp.com/developer/open-commerce/playground/
+- type: GitHubOrganization
+  url: https://github.com/reactioncommerce
+- type: SourceCode
+  url: https://github.com/reactioncommerce/reaction
+- type: Packages
+  url: packages/reaction-commerce-packages.yml
+- type: SDKs
+  url: packages/reaction-commerce-packages.yml
+- type: CLI
+  url: cli/reaction-commerce-cli.yml
+- type: Components
+  url: components/reaction-commerce-components.yml
+- type: WellKnown
+  url: well-known/reaction-commerce-well-known.yml
+- type: SecurityTxt
+  url: well-known/reaction-commerce-security.txt
+- type: VulnerabilityDisclosure
+  url: security/reaction-commerce-vulnerability-disclosure.yml
+- type: Security
+  url: https://mailchimp.com/about/security/#Responsible_Disclosure
+- type: Lifecycle
+  url: lifecycle/reaction-commerce-lifecycle.yml
+- type: LLMsTxt
+  url: llms/reaction-commerce-llms.txt
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 7
+  pass: local-v1

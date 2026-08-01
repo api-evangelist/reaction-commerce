@@ -1,0 +1,38 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/reactioncommerce
+notes: >-
+  Client-side / storefront UI component libraries published by Mailchimp Open
+  Commerce (Reaction Commerce). These are React component libraries for building
+  headless storefronts and admin surfaces against the Open Commerce GraphQL API,
+  distinct from the server-side api-core / api-plugin packages.
+families:
+  - family: Storefront Components
+    description: >-
+      Reusable React storefront component library used by the Open Commerce
+      example-storefront (Next.js + Apollo Client).
+    packages:
+      - name: "@reactioncommerce/components"
+        url: https://www.npmjs.com/package/@reactioncommerce/components
+        registry: npm
+      - name: "@reactioncommerce/components-context"
+        url: https://www.npmjs.com/package/@reactioncommerce/components-context
+        registry: npm
+        role: dependency-injection context for swapping component implementations
+  - family: Catalyst (Admin)
+    description: >-
+      Reaction Catalyst — opinionated React UI component library for building
+      Open Commerce admin / operator tooling.
+    packages:
+      - name: "@reactioncommerce/catalyst"
+        url: https://www.npmjs.com/package/@reactioncommerce/catalyst
+        registry: npm
+reference_apps:
+  - name: example-storefront
+    repo: https://github.com/reactioncommerce/example-storefront
+    stack: Next.js, React, GraphQL, Apollo Client
+  - name: reaction-admin
+    repo: https://github.com/reactioncommerce/reaction-admin
+  - name: kinetic
+    repo: https://github.com/reactioncommerce/kinetic
+    description: TypeScript suite of admin tools for managing Open Commerce stores.

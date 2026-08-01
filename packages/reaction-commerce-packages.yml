@@ -1,0 +1,89 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.npmjs.com/org/reactioncommerce
+notes: >-
+  First-party libraries published under the official @reactioncommerce npm scope
+  for Mailchimp Open Commerce (formerly Reaction Commerce). Open Commerce is an
+  open-source, self-hosted GraphQL commerce platform; these are the framework
+  building blocks used to build and extend an Open Commerce API server and
+  storefront. The core `reaction` platform is discontinued but the packages
+  remain published on npm.
+packages:
+  - language: javascript
+    registry: npm
+    name: "@reactioncommerce/api-core"
+    url: https://www.npmjs.com/package/@reactioncommerce/api-core
+    install: npm install @reactioncommerce/api-core
+    description: >-
+      Provides the ReactionAPICore class used to build and run an Open Commerce
+      GraphQL API server.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@reactioncommerce/api-utils"
+    url: https://www.npmjs.com/package/@reactioncommerce/api-utils
+    install: npm install @reactioncommerce/api-utils
+    description: Utility functions for the Reaction / Open Commerce API.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@reactioncommerce/reaction-error"
+    url: https://www.npmjs.com/package/@reactioncommerce/reaction-error
+    install: npm install @reactioncommerce/reaction-error
+    description: Error handling for the Reaction / Open Commerce API.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@reactioncommerce/schemas"
+    url: https://www.npmjs.com/package/@reactioncommerce/schemas
+    install: npm install @reactioncommerce/schemas
+    description: The collection schemas API for Reaction Commerce.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@reactioncommerce/components"
+    url: https://www.npmjs.com/package/@reactioncommerce/components
+    install: npm install @reactioncommerce/components
+    description: Reaction Commerce example storefront React component library.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@reactioncommerce/catalyst"
+    url: https://www.npmjs.com/package/@reactioncommerce/catalyst
+    install: npm install @reactioncommerce/catalyst
+    description: Reaction Catalyst UI component library.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "reaction-cli"
+    url: https://www.npmjs.com/package/reaction-cli
+    install: npm install -g reaction-cli
+    description: >-
+      Command line client for creating, developing and deploying Open Commerce
+      projects. Latest published version 1.5.2.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@reactioncommerce/file-collections"
+    url: https://www.npmjs.com/package/@reactioncommerce/file-collections
+    install: npm install @reactioncommerce/file-collections
+    description: Manage file uploads, downloads and transformed copies in Node.js.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@reactioncommerce/data-factory"
+    url: https://www.npmjs.com/package/@reactioncommerce/data-factory
+    install: npm install @reactioncommerce/data-factory
+    description: Factory util that creates mock data fixtures from simpl-schema definitions.
+    official: true
+plugins:
+  note: >-
+    Open Commerce is plugin-based; the @reactioncommerce/api-plugin-* family
+    (carts, orders, catalogs, shops, notifications, i18n, files, surcharges,
+    settings, email-templates, ...) provides the pluggable GraphQL API domains.
+  examples:
+    - "@reactioncommerce/api-plugin-carts"
+    - "@reactioncommerce/api-plugin-orders"
+    - "@reactioncommerce/api-plugin-catalogs"
+    - "@reactioncommerce/api-plugin-shops"
+    - "@reactioncommerce/api-plugin-notifications"

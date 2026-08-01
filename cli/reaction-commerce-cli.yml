@@ -1,0 +1,37 @@
+generated: '2026-07-20'
+method: searched
+source: https://mailchimp.com/developer/open-commerce/guides/quick-start/
+name: reaction-cli
+binary: reaction
+package: reaction-cli
+package_url: https://www.npmjs.com/package/reaction-cli
+repository: https://github.com/reactioncommerce/cli
+version: 1.5.2
+description: >-
+  A command line tool for creating, developing and deploying Mailchimp Open
+  Commerce (Reaction Commerce) projects — the API server, storefront and admin
+  applications.
+install:
+  - method: npm
+    command: npm install -g reaction-cli
+commands:
+  - name: create-project
+    usage: reaction create-project <type> <name>
+    description: >-
+      Scaffold a new Open Commerce project of a given type (api, storefront, or
+      admin) into a named directory.
+    types: [api, storefront, admin]
+  - name: develop
+    usage: reaction develop
+    description: >-
+      Start a project in development mode (run from inside a created project
+      directory).
+flows:
+  - name: Stand up a full Open Commerce stack
+    steps:
+      - reaction create-project api myapiserver
+      - cd myapiserver && npm install && reaction develop
+      - reaction create-project storefront mystorefront
+      - cd mystorefront && yarn install && reaction develop
+      - reaction create-project admin myadmin
+      - cd myadmin && npm install && reaction develop

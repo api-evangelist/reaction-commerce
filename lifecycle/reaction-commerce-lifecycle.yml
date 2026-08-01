@@ -1,0 +1,27 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/reactioncommerce/reaction
+notes: >-
+  Reaction Commerce was acquired by Mailchimp in 2020 and rebranded as Mailchimp
+  Open Commerce. The core open-source `reaction` GraphQL platform repository is
+  marked discontinued, though the developer documentation and npm packages
+  remain published. The original reactioncommerce.com domain no longer resolves.
+status: discontinued
+maintenance: community / archived
+versioning:
+  scheme: track-based
+  mechanism: >-
+    Platform "tracks" with schema/data version compatibility enforced via
+    api-migrations and @reactioncommerce/db-version-check.
+  docs: https://github.com/reactioncommerce/api-migrations
+deprecation:
+  policy_url: null
+  sunset_header: false
+  note: >-
+    No formal per-operation deprecation policy is published; the whole core
+    platform is discontinued as of the Mailchimp Open Commerce wind-down.
+sla:
+  url: null
+status_page: null
+current_docs: https://mailchimp.com/developer/open-commerce/
+source_code: https://github.com/reactioncommerce/reaction
