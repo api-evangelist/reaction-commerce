@@ -1,13 +1,13 @@
 generated: '2026-07-20'
 method: searched
 host: https://mailchimp.com
-notes: >-
-  The original reactioncommerce.com domain no longer resolves (project acquired
-  by Mailchimp; now Mailchimp Open Commerce). The Open Commerce developer docs
-  are served under mailchimp.com/developer/open-commerce, so the effective
-  well-known surface is that of the mailchimp.com parent host. Only the RFC 9116
-  security.txt was found; it points at Mailchimp's Responsible Disclosure page.
-documents:
+notes: The original reactioncommerce.com domain no longer resolves (project acquired by Mailchimp; now
+  Mailchimp Open Commerce). The Open Commerce developer docs are served under mailchimp.com/developer/open-commerce,
+  so the effective well-known surface is that of the mailchimp.com parent host. Only the RFC 9116 security.txt
+  was found; it points at Mailchimp's Responsible Disclosure page.
+hosts:
+- host: https://mailchimp.com
+  documents:
   - path: /.well-known/security.txt
     status: 200
     file: reaction-commerce-security.txt
@@ -19,3 +19,8 @@ documents:
     status: 404
   - path: /.well-known/ai-plugin.json
     status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
